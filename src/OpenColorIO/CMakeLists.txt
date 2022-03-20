@@ -310,7 +310,7 @@ if(UNIX AND NOT APPLE)
 elseif(APPLE)
     # Hide the expat symbols.
     set_property (TARGET OpenColorIO
-                  APPEND PROPERTY LINK_FLAGS "-Wl,-hidden-lexpat")
+                  APPEND PROPERTY LINK_FLAGS "-Wl")
 endif()
 
 if(MSVC AND BUILD_SHARED_LIBS)
